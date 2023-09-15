@@ -26,7 +26,9 @@ const PostList = () => {
 
   return (
     <div>
-      <h1>Список постов</h1>
+      <div className="post-card create">
+      <Link to="/posts/new"><button className="create-button">Создать пост</button></Link>
+      </div>
       {posts.map((post) => (
         <div className="post-card" key={post.id}>
           <h2>{post.content}</h2>
@@ -34,19 +36,14 @@ const PostList = () => {
             <Link to={`/posts/${post.id}`} className="view-link">
               Подробнее
             </Link>
-            <Link to={`/posts/${post.id}/edit`} className="action-button">
-              Редактировать
+            <Link to={`/posts/${post.id}/edit`}><button className="action-button">Редактировать</button>
             </Link>
             <button
               className="action-button"
-              onClick={() => handleDelete(post.id)}
-            >
-              Удалить
-            </button>
+              onClick={() => handleDelete(post.id)}>Удалить</button>
           </div>
         </div>
       ))}
-      <Link to="/posts/new">Создать пост</Link>
     </div>
   );
 };

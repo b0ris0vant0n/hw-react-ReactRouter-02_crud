@@ -1,55 +1,80 @@
 * {
   font-family: sans-serif;
+  background-color: #e8eaed;
+}
+
+.create-button {
+  width: 100px;
+  height: 25px;
+  background-color: #4469ae;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none; 
+}
+
+.create-button:hover {
+  background-color: #345c99;
 }
 
 .post-card {
   background: #ffffff;
   border: 1px solid #dadde1;
-  border-radius: 8px;
+  border-radius: 4px;
   margin-bottom: 16px;
   padding: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.post-card:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
 .post-card h2 {
-  font-size: 1.4rem;
-  font-weight: bold;
+  background-color: white;
+  font-size: 14px;
+  font-weight: normal;
   margin-bottom: 8px;
 }
 
 .post-card p {
+  background-color: white;
   font-size: 1.2rem;
   color: #333333;
   margin-bottom: 16px;
 }
 
+.post-card create {
+  background-color: white;
+  justify-content: right;
+}
+
 .action-buttons {
   display: flex;
+  background-color: white;
   justify-content: space-between;
   align-items: center;
 }
 
 .action-button {
-  width: 200px;
-  height: 40px;
-  background: none;
-  border: none;
-  color: #1877f2;
-  font-size: 1.2rem;
-  cursor: pointer;
-  margin-right: 8px;
+  width: 120px;
+  height: 25px;
+  background-color: #4469ae;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none; 
 }
 
 .action-button:hover {
   text-decoration: underline;
+  text-decoration: none; 
 }
 
 .view-link {
+  background-color: white;
+  font-size: 12px;
   text-decoration: none;
   color: #1877f2;
   font-weight: bold;
@@ -57,4 +82,15 @@
 
 .view-link:hover {
   text-decoration: underline;
+}
+
+textarea {
+  width:90%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  height:150px;
+  background-color: rgba(215, 215, 215, 0.846);
 }
